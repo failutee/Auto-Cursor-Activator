@@ -2,7 +2,9 @@
 Manually finding a working card for free trials can be a tedious and time-consuming process. You might have to test dozens of generated cards before one finally works. This extension automates the entire process, significantly simplifying and speeding up activation!
 
 ## 🛠️ Installation
-https://github.com/user-attachments/assets/ab0c8f93-1609-4354-b5de-018ed56b9c34
+https://github.com/user-attachments/assets/55d4361d-7c07-4fd4-ac38-c9449966dffc
+
+
 
 ## 🚀 How to Use
 
