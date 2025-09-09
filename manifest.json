@@ -1,0 +1,39 @@
+{
+    "manifest_version": 3,
+    "name": "Auto Cursor Activator",
+    "author": "failutee",
+    "version": "1.0.0",
+    "description": "Automatically obtains Pro Trial status in Cursor IDE.",
+    "permissions": [
+        "storage",
+        "webRequest",
+        "tabs"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_title": "Auto Cursor Activator",
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "128": "assets/icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "css": [
+                "styles.css"
+            ],
+            "run_at": "document_start"
+        }
+    ]
+}

@@ -1,0 +1,126 @@
+body {
+    margin: 12px;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    background: #0d0d0d;
+    color: #f5f5f5;
+    overflow: hidden;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 360px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.header h1 {
+    font-size: 18px;
+    margin: 5px 0;
+    font-weight: 500;
+    color: #f5f5f5;
+    height: 22px;
+}
+
+.animated-text span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px) scale(0.8);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.header a {
+    font-size: 12px;
+    color: #a0a0a0;
+}
+
+.header a.shiny-text {
+    position: relative;
+    background: linear-gradient(90deg, #a0a0a0, #ffffff, #a0a0a0);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent !important;
+    /* Ensure override */
+    animation: shiny-effect 3s linear infinite;
+}
+
+@keyframes shiny-effect {
+    to {
+        background-position: 200% center;
+    }
+}
+
+label {
+    text-align: center;
+    display: block;
+    margin-bottom: 5px;
+    color: #c0c0c0;
+    font-size: 14px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 160px;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #3a3a3a;
+    background: #1a1a1a;
+    color: #ffffff;
+    resize: none;
+    box-sizing: border-box;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #555;
+    background-color: #222;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+    border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 12px;
+    border: 2px solid #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #777;
+}
+
+button {
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #3a3a3a;
+    background: #2a2a2a;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background: #383838;
+}

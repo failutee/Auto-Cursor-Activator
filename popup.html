@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cursor Activation</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="animated-text">Author: failutee</h1>
+            <a href="https://github.com/failutee" target="_blank" rel="noopener noreferrer"
+                class="shiny-text">github.com/failutee</a>
+        </div>
+        <label for="activationText">Enter card details (format: PIPE)</label>
+        <textarea id="activationText" placeholder="Paste text here..."></textarea>
+        <button id="startActivation">Start Activation</button>
+        <div id="activationStatus" style="display:none;font-size:12px;color:#a0ffa0;">Activation started in this
+            session.</div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>
